@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Academia de Superhéroes</title>
+
+    <!-- Vue por CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="app-heroes">
+        <h1>Habilidades Disponibles</h1>
+
+        <!-- Lista de habilidades -->
+        <div class="lista">
+            <div class="tarjeta" v-for="habilidad in habilidades" :key="habilidad.id">
+                
+                <p class="icono">{{ habilidad.icono }}</p>
+                <h3>{{ habilidad.nombre }}</h3>
+
+                <button v-on:click="activarPoder(habilidad.nombre)">
+                    Activar Poder
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JS externo -->
+    <script src="js/miScript.js"></script>
+
+</body>
+</html>

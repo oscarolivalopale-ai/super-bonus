@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.lista {
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 200px;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.icono {
+    font-size: 30px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
